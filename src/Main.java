@@ -11,7 +11,7 @@ public class Main {
             int random_int = (int) Math.floor(Math.random() * (max - min + 1) + min);
             System.out.println("Random value: " + random_int);
 
-            ArrayList<Integer> listOfRights2 = new ArrayList<Integer>();
+           ArrayList<Integer> listOfRights2 = new ArrayList<Integer>();
             listOfRights2 = makeAnArrayList(random_int);
             System.out.println(listOfRights2);
 
