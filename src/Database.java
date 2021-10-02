@@ -14,7 +14,7 @@ public class Database {
 
     final String dbURL = "jdbc:mysql://localhost:3306/Java24";
     final String user ="root";
-    final String password = "user";
+    final String password = "Venera2702!";
 
     public void readData () throws SQLException {
         String sql = "SELECT * FROM game";
