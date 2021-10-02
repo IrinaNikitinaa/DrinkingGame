@@ -44,3 +44,5 @@ Who drinks.
 To decide which player drinks after we asked to enter the number the “for” loop checked if this number is equal as one in the array and in exact place. In that we cought two rabbits with one shot – checking if the number is in array and the next one to be count. At the start we struggled because for each task – switch player turns and switch the number to the next one – we had “for” loop but it raised the issue that a game stucked in the one “for” loop and could not get in the next one. So for switching the players one “for “ loop we changed for the “if/else” statement and that solved our problem.
 
 Database.
+
+MySQL we created a table “Game” where was 5 columns – one for game ID, two for player`s names and two for results. In database file we created methods for inserting and reading data. It was struggling to understand and work out how to make connection and properly working methods.
