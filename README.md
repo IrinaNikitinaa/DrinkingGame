@@ -20,15 +20,15 @@ It would look like this:
 Zoom -> codewriting/sharing -> Zoom (sketches) ->  codewriting/sharing -> struggling -> Zoom -> asking for help -> Zoom -> codewriting/sharing -> Zoom (struggling) -> codewriting/sharing -> Zoom -> asking for help -> codewriting/sharing...etc
 
 Process of making a game
-Array
+Array.
 First we made methods and used this methods for making an array which would contain only the right numbers based on random number. We also decided that a random number will be somewhere between 3-9 (3 and 9 included) because with number 1 our array would be complete emty and with number 2 – would be too much skipped numbers.
 
-Players
+Players.
 At the beginning we thought that a game can contain several players but in the process we decided to include only 2, to make our game a bit simpler. Player names is going to be saved in two places – an array and in the class. Player class also contained methods to input/read data and count mistakes made by players.
 
 
 
-Who drinks
+Who drinks.
 To decide which player drinks after we asked to enter the number the “for” loop checked if this number is equal as one in the array and in exact place. In that we cought two rabbits with one shot – checking if the number is in array and the next one to be count. At the start we struggled because for each task – switch player turns and switch the number to the next one – we had “for” loop but it raised the issue that a game stucked in the one “for” loop and could not get in the next one. So for switching the players one “for “ loop we changed for the “if/else” statement and that solved our problem.
 
-Database
+Database.
