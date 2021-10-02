@@ -13,7 +13,7 @@ We dont`t know exact name for this game but the main idea and the rules for our 
 
 Process of project.
 
-At the begining we thought that we may split the parts of the project between our selves but because of inexperience of doing theese kind of projects we couldn`t possible be sure how much and what exactly we would be suppose of doing. What we did assume – there will be database part and coding part where the last one would be splited – outside game and in game logic parts. Una voluntiered to be our database guru. Kia as a past time “drinking game” user included her self in the game logic part. Irina agreed to type the code for an outside game part (comunication with user and  participants) and later on – to create and manage Player class. After that everything happened so fast and haotic:
+At the begining we thought that we may split the parts of the project between our selves but because of inexperience of doing theese kind of projects we couldn`t possible be sure how much and what exactly we would be suppose of doing. What we did assume – there will be database part and coding part where the last one would be splited – outside game and in game logic parts. Una voluntiered to be our database guru. Kia as a past time “drinking game” user included her self in the game logic part. Irina agreed to type the code for an outside game part, to create and manage Player class and become Git guru. After that everything happened so fast and haotic:
 
 •	extremeley messy sketches in Photoshop
 
