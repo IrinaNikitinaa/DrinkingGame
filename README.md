@@ -31,7 +31,7 @@ Process of making a game.
 
 Array.
 
-First we made methods and used this methods for making an array which would contain only the right numbers based on random number. We also decided that a random number will be somewhere between 3-9 (3 and 9 included) because with number 1 our array would be complete emty and with number 2 – would be too much skipped numbers.
+First we made methods and used this methods for making an array which would contain only the right numbers based on random number. We also decided that a random number will be somewhere between 3-9 (3 and 9 included) because with number 1 our array would be complete empty and with number 2 – would be too much skipped numbers.
 
 Players.
 
