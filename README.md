@@ -8,7 +8,7 @@ Rules.
 
 Idea.
 
-At the beginning we had two main ideas – “The drinking game” and an online shop for the socks. When we talked more about theese ideas we came to conclussion that the online shop idea would involve more database and less coding part and game idea would propouse the oppossit. So we made a choice to do “the drinking game”.
+At the beginning we had two main ideas – “The drinking game” and an online shop for the socks. When we talked more about these ideas we came to conclussion that the online shop idea would involve more database and less coding part and game idea would propouse the oppossit. So we made a choice to do “the drinking game”.
 We dont`t know exact name for this game but the main idea and the rules for our game is gotten out of the card game “Kava” that Kia bought in “Jāņa Rozes grāmatnīca”. This card game contains bunch of cards which displays tasks for the players and if a player can`t, wont or make mistakes doing a task, he or she drinks. And our game is one of the tasks in “Kava1”.
 
 Process of project.
