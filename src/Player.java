@@ -3,7 +3,7 @@ public class Player {
     private int number;
     private int wrong;
 
-    public Player(String name, int number){
+    public Player(String name, int number) {
         this.name = name;
         this.number = number;
         wrong = 0;
@@ -20,7 +20,8 @@ public class Player {
     public int getNumber() {
         return number;
     }
-    public void add(){
+
+    public void add() {
         wrong++;
     }
 }

@@ -47,28 +47,29 @@ public class Database {
     }
 
     public void insertData (String player1, String player2, int result1, int result2) throws SQLException {
-
-        try ( Connection conn = DriverManager.getConnection(dbURL, user, password)) {
-
-            String sql = "INSERT INTO game (player1, player2, result1, result2) VALUES (?, ?, ?, ?)";
-
-            PreparedStatement preparedStatement = conn.prepareStatement(sql);
-            preparedStatement.setString(1,"player1");
-            preparedStatement.setString(2,"player2");
+        Statement stmt = null;
+        try  {
+            Connection conn = DriverManager.getConnection(dbURL, user, password);
+            stmt = conn.createStatement();
+            String sql = "INSERT INTO game (player1, player2, result1, result2) VALUES ('"+player1+"','"+player2+"',"+result1+","+result2+")";
+            //System.out.println(sql);
+            stmt.executeUpdate(sql);
+            /*PreparedStatement preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1,player1);
+            preparedStatement.setString(2,player2);
             preparedStatement.setInt(3,result1);
-            preparedStatement.setInt(4,result2);
-
-            int rowInserted = preparedStatement.executeUpdate(sql);
+            preparedStatement.setInt(4,result2);*/
+            System.out.println(sql);
+            int rowInserted = stmt.executeUpdate(sql);
 
             if (rowInserted > 0) {
                 System.out.println("Successfully inserted");
             } else {
                 System.out.println("Something went wrong");
             }
-
         }
         catch(SQLException e){
-            System.out.println("Something went wrong");
+            System.out.println("Something went wrong" +e);
         }
     }
 }

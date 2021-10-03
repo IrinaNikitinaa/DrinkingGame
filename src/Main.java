@@ -5,15 +5,15 @@ public class Main {
     public static void main(String[] args) {
 
         Database database = new Database();
-
+        char again = 'y'; //ADD
         Scanner scanner = new Scanner(System.in);
-        char again = 'y';
 
-        while (again == 'y') {
+        while (again == 'y'){  // ADD
             System.out.println("What do You want to do?");
             System.out.println("p - play");
             System.out.println("r - read");
-            char action = scanner.nextLine().charAt(0);
+
+            char action = scanner.next().charAt(0);
 
             if (action == 'r') {
                 try {
@@ -24,7 +24,6 @@ public class Main {
 
             } else if (action == 'p') {
 
-
                 try {
                     //Making an array
                     int min = 3;
@@ -34,7 +33,7 @@ public class Main {
 
                     ArrayList<Integer> listOfRights2 = new ArrayList<Integer>();
                     listOfRights2 = makeAnArrayList(random_int);
-                   /* System.out.println(listOfRights2);*/
+                    //System.out.println(listOfRights2);
 
                     //Get a name of the player and add in class file
                     scanner = new Scanner(System.in);
@@ -46,10 +45,8 @@ public class Main {
                     }
 
                     //Get a number of the player and check who drinks
-
                     int currentPlayer = 0;
                     for (int i = 0; i <= listOfRights2.size(); i++) {
-                        //for (int j = 0; j < playerArrayList.size(); j++) {
 
                         System.out.println(playerArrayList.get(currentPlayer).getName() + " enter the number:");
                         int number = scanner.nextInt();
@@ -63,29 +60,33 @@ public class Main {
 
                             System.out.println(playerArrayList.get(currentPlayer).getName() + " drinked " + playerArrayList.get(currentPlayer).getWrong() + " times");
                             System.out.println(playerArrayList.get(currentPlayer).getName() + " is drunk");
-                            if (currentPlayer == 2) {
-                                System.out.println(playerArrayList.get(currentPlayer).getName() + " is winner!");
+                            if (currentPlayer == 0) {
+                                System.out.println(playerArrayList.get(1).getName() + " is winner!");
+                                database.insertData(playerArrayList.get(0).getName(),playerArrayList.get(1).getName(),playerArrayList.get(0).getWrong(),playerArrayList.get(1).getWrong());
                             } else {
-                                System.out.println(playerArrayList.get(currentPlayer + 1).getName() + " is winner!");
+                                System.out.println(playerArrayList.get(0).getName() + " is winner!");
+                                database.insertData(playerArrayList.get(0).getName(),playerArrayList.get(1).getName(),playerArrayList.get(0).getWrong(),playerArrayList.get(1).getWrong());
                             }
                             break;
                         }
-
                         if (currentPlayer == 0) {
                             currentPlayer = 1;
                         } else {
                             currentPlayer = 0;
                         }
                         //Insert results in database
-                        database.insertData(playerArrayList.get(currentPlayer=0).getName(), playerArrayList.get(currentPlayer=1).getName(), playerArrayList.get(currentPlayer=0).getWrong(), playerArrayList.get(currentPlayer=1).getWrong());
+                        //database.insertData(playerArrayList.get(currentPlayer=0).getName(), playerArrayList.get(currentPlayer=1).getName(), playerArrayList.get(currentPlayer=0).getWrong(), playerArrayList.get(currentPlayer=1).getWrong());
                     }
 
                 } catch (Exception e) {
                     System.out.println("Something went wrong" + e);
                 }
             }
+            System.out.println("Do you want to do something more? y/n"); //ADD
+            again = scanner.next().charAt(0);  //ADD
         }
     }
+
     //Method for making a list based of random number as an exception
     public static ArrayList<Integer> makeAnArrayList ( int random){
         ArrayList<Integer> listOfRights = new ArrayList();
