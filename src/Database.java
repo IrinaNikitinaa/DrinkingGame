@@ -42,8 +42,6 @@ public class Database {
         }catch(Exception e){
             System.out.println("Something went wrong" + e);
         }
-
-
     }
 
     public void insertData (String player1, String player2, int result1, int result2) throws SQLException {
