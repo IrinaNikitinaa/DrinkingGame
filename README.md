@@ -15,6 +15,8 @@ Process of project.
 
 At the begining we thought that we may split the parts of the project between ourselves but because of inexperience of doing these kind of projects we couldn`t possibly be sure how much and what exactly we would be supposed to do. What we did assume – there will be database part and coding part where the last one would be splitted – outside game and in game logic parts. Una voluntiered to be our database guru. Kia as a past time “drinking game” user included herself in the game logic part. Irina agreed to type the code for an outside game part, to create and manage Player class and become Git guru. After that everything happened so fast and haotic:
 
+•	creating Trello board for our project – to mark tasks and their status
+
 •	extremeley messy sketches in Photoshop
 
 •	the code writing and sharing using codeshare.io
