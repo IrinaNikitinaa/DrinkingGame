@@ -5,3 +5,4 @@ CREATE TABLE game (
     result1 int,
     result2 int,
     PRIMARY KEY (game_id)
+);

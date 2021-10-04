@@ -12,9 +12,11 @@ CREATE TABLE game (
 
 public class Database {
 
-    final String dbURL = "jdbc:mysql://localhost:3306/Java24";
-    final String user ="root";
-    final String password = "Venera2702!";
+    //Variables for DB connection
+    private final String dbURL = "jdbc:mysql://localhost:3306/java24";
+    private final String user = "root";
+    private final String password = "Venera2702!";
+
 
     public void readData () throws SQLException {
         String sql = "SELECT * FROM game";
@@ -37,8 +39,6 @@ public class Database {
                 System.out.println(String.format
                         (output, gameID, player1, player2, result1, result2));
             }
-            //readData(conn);
-
         }catch(Exception e){
             System.out.println("Something went wrong" + e);
         }
@@ -52,22 +52,9 @@ public class Database {
             String sql = "INSERT INTO game (player1, player2, result1, result2) VALUES ('"+player1+"','"+player2+"',"+result1+","+result2+")";
             //System.out.println(sql);
             stmt.executeUpdate(sql);
-            /*PreparedStatement preparedStatement = conn.prepareStatement(sql);
-            preparedStatement.setString(1,player1);
-            preparedStatement.setString(2,player2);
-            preparedStatement.setInt(3,result1);
-            preparedStatement.setInt(4,result2);*/
-            System.out.println(sql);
-            int rowInserted = stmt.executeUpdate(sql);
-
-            if (rowInserted > 0) {
-                System.out.println("Successfully inserted");
-            } else {
-                System.out.println("Something went wrong");
-            }
         }
         catch(SQLException e){
-            System.out.println("Something went wrong" +e);
+            System.out.println("Something went wrong" + e);
         }
     }
 }
