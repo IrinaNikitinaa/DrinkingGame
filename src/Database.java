@@ -15,7 +15,7 @@ public class Database {
     //Variables for DB connection
     private final String dbURL = "jdbc:mysql://localhost:3306/java24";
     private final String user = "root";
-    private final String password = "Venera2702!";
+    private final String password = "password";
 
 
     public void readData () throws SQLException {
